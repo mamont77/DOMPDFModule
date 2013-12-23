@@ -107,9 +107,9 @@ class DOMPDFFactory implements FactoryInterface
 
             define(static::$configCompatMapping[$key], $value);
         }
-
         require_once DOMPDF_LIB_DIR . '/html5lib/Parser.php';
         require_once DOMPDF_INC_DIR . '/functions.inc.php';
+        require_once DOMPDF_DIR . '/dompdf_config.inc.php';
         require_once __DIR__ . '/../../../config/module.compat.php';
 
         return new DOMPDF();
